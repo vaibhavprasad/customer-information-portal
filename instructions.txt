@@ -1,0 +1,29 @@
+Unit testing: following - https://vue-test-utils.vuejs.org/guides/testing-single-file-components-with-jest.html
+
+npm install --save-dev jest @vue/test-utils
+npm install --save-dev vue-jest
+
+Add the following in package.json 
+
+{
+  // ...
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      // tell Jest to handle `*.vue` files
+      "vue"
+    ],
+    "transform": {
+      // process `*.vue` files with `vue-jest`
+      ".*\\.(vue)$": "vue-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}
+
+
+npm install --save-dev babel-jest
+
