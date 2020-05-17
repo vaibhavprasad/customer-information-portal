@@ -21,6 +21,7 @@ Running the application:
 - Clone the project  
 - Setup mysql and create a database.  
 - Update the database setting and database name in server/config/db.config.js.  
+- Run the queries from server/data.sql to populate the initial data.  
 - Navigate to the server folder and run ```npm install```.  
 - Run ```node app.js``` to start the server.  
   
